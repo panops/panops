@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |gem|
   gem.name = 'panops'
-  gem.version = '0.0.1alpha'
+  gem.version = '0.0.1alpha1'
 
   gem.authors = ["PanOps Platform Contributors"]
   gem.email = ["engineering@panops.org"]
@@ -17,6 +17,7 @@ Gem::Specification.new do |gem|
 
   gem.require_paths = ['lib']
 
+  gem.required_ruby_version = '>= 1.9.3'
   gem.required_rubygems_version = Gem::Requirement.new '>= 1.3.6'
 
   gem.add_development_dependency 'rake', '~> 0.9.2'
@@ -24,4 +25,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rspec', '~> 2.7.0'
   gem.add_development_dependency 'yard', '~> 0.7'
   gem.add_development_dependency 'rdiscount', '~> 1.6.8'
+
+  gem.add_dependency 'panops-ui-cli', '= 0.0.1alpha1'
 end
